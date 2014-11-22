@@ -1,4 +1,5 @@
 #include <iostream>
+#include <iterator>
 #include <string>
 #include <fstream>
 #include <vector>
@@ -28,7 +29,7 @@ string ummRemover (string line) {
 
 int main (int argc, char* argv[]) {
   ifstream file;
-  ofstream out(tempFileName);
+  ofstream out(tempFileName.c_str(), ios::out);
   if (argc < 2) {
     cerr << "ERROR: No input file specified." << endl;
     return 0;
