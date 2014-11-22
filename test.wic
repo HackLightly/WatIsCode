@@ -1,12 +1,29 @@
 DO I NEED iostream
-main FINDS A int
 
+main FINDS A int FROM A int CALLED argc AND A char* CALLED argv[]
+  I NEED A int CALLED x
+  I NEED A int CALLED y
+
+  y SHOULD BE 1
+  ASK ABOUT x
+
+  I THINK x > 0
+    SHOW ME "x is greater than zero"
+  OR MAYBE x == 0
+    SHOW ME "x equals zero"
+  I LIED
+    SHOW ME "x is less than zero"
+  RIGHT?
+
+  WATER WATER WATER
+    SHOW ME y
+    y SHOULD BE y + 1
+
+    I THINK y == x
+      RUN FROM GEESE
+    RIGHT?
+  LOOP LOOP LOOP
+
+  I CALCULATED 0
 PLEASE WORK
 
-test FINDS A string FROM A bool CALLED a AND A int CALLED nom AND A string CALLED me
-
-WATER WATER WATER
-RUN FROM GEESE
-LOOP LOOP LOOP
-
-PLEASE WORK

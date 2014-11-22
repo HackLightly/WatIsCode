@@ -54,7 +54,7 @@ int main (int argc, char* argv[]) {
       }
       //INPUT
       else if (tokens.size() > 2 && tokens.at(0) == "ASK" && tokens.at(1) == "ABOUT") {
-        cout << "std::cin >> " << tokens.at(3)  << ";" << endl;
+        cout << "std::cin >> " << tokens.at(2)  << ";" << endl;
       }
       //OUTPUT
       else if (tokens.size() > 2 && tokens.at(0) == "SHOW" && tokens.at(1) == "ME") {
@@ -94,8 +94,37 @@ int main (int argc, char* argv[]) {
       else if (tokens.size() > 1 && tokens.at(0) == "PLEASE" && tokens.at(1) == "WORK") {
         cout << "}" << endl;
       }
+      // IF
+      else if (tokens.size() > 2 && tokens.at(0) == "I" && tokens.at(1) == "THINK") {
+        cout << "if (";
+        for (int i = 2; i < tokens.size(); i++) {
+          cout << tokens.at(i) << " ";
+        }
+        cout << ") {" << endl;
+      }
+      else if (tokens.size() > 2 && tokens.at(0) == "OR" && tokens.at(1) == "MAYBE") {
+        cout << "} else if (";
+        for (int i = 2; i < tokens.size(); i++) {
+          cout << tokens.at(i) << " ";
+        }
+        cout << ") {" << endl;
+      }
+      else if (tokens.size() == 2 && tokens.at(0) == "I" && tokens.at(1) == "LIED") {
+        cout << "} else {" << endl;
+      }
+      else if (tokens.size() == 1 && tokens.at(0) == "RIGHT?") {
+        cout << "}" << endl;
+      }
+      else if (tokens.size() > 2 && tokens.at(0) == "I" && tokens.at(1) == "CALCULATED") {
+        cout << "return ";
+        for (int i = 2; i < tokens.size(); i++) {
+          cout << tokens.at(i) << " ";
+        }
+        cout << ";" << endl;
+      }
       else {
-        throw string(line);
+        // Anything else (function call)
+        cout << line << ";" << endl;
       }
     }
   }
