@@ -1,4 +1,4 @@
-#include <iostream> 
+#include <iostream>
 #include <string>
 #include <fstream>
 #include <vector>
@@ -8,12 +8,12 @@ using namespace std;
 
 
 vector<string> splitString (string input) {
-  istringstream iss(input); 
-  vector<string> tokens; 
-  copy(istream_iterator<string>(iss), 
-      istream_iterator<string>(), 
-      back_inserter(tokens)); 
-  return tokens; 
+  istringstream iss(input);
+  vector<string> tokens;
+  copy(istream_iterator<string>(iss),
+      istream_iterator<string>(),
+      back_inserter(tokens));
+  return tokens;
 }
 
 string ummRemover (string line) {
@@ -64,8 +64,30 @@ int main (int argc, char* argv[]) {
         }
         cout << " << std::endl;" << endl;
       }
+      // IF
+      else if (tokens.size() > 2 && tokens.at(0) == "I" && tokens.at(1) == "THINK") {
+        cout << "if (";
+        for (int i = 2; i < tokens.size(); i++) {
+          cout << tokens.at(i) << " ";
+        }
+        cout << ") {" << endl;
+      }
+      else if (tokens.size() > 2 && tokens.at(0) == "OR" && tokens.at(1) == "MAYBE") {
+        cout << "} else if (";
+        for (int i = 2; i < tokens.size(); i++) {
+          cout << tokens.at(i) << " ";
+        }
+        cout << ") {" << endl;
+      }
+      else if (tokens.size() == 2 && tokens.at(0) == "I" && tokens.at(1) == "LIED") {
+        cout << "} else {" << endl;
+      }
+      else if (tokens.size() == 1 && tokens.at(0) == "RIGHT?") {
+        cout << "}" << endl;
+      }
       else {
-        throw string(line);
+        // Anything else (function call)
+        cout << line << ";" << endl;
       }
     }
   }
