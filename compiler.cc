@@ -34,15 +34,17 @@ int main (int argc, char* argv[]) {
 			line = ummRemover(line); //ignore comments
 			vector<string> tokens = splitString(line); //tokenize with space as delimiter
 					
-			
+			//INCLUDE
 			if (tokens.size() > 3 && tokens.at(0) == "DO" && tokens.at(1) == "I" &&
 				tokens.at(2) == "NEED") {
 				cout << "#include <" << tokens.at(3) << ">" << endl;
 			}
+			//DECLARATION
 			else if (tokens.size() > 5 && tokens.at(0) == "I" && tokens.at(1) == "NEED" &&
 					tokens.at(2) == "A" && tokens.at(4) == "CALLED") {
 				cout << tokens.at(3) << " " << tokens.at(5) << ";" << endl;
 			}
+			//ASSIGNMENT
 			else if (tokens.size() > 3 && tokens.at(1) == "SHOULD" && tokens.at(2) == "BE") {
 				cout << tokens.at (0) << " = ";
 				for (int i = 3; i < tokens.size(); i++) {
@@ -50,6 +52,7 @@ int main (int argc, char* argv[]) {
 				}
 				cout << ";" << endl;
 			}
+			//INPUT
 			else if (tokens.size() > 2 && tokens.at(0) == "ASK" && tokens.at(1) == "ABOUT") {
 				cout << "cin >> " << tokens.at(3) << endl;
 			}
