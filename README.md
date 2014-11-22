@@ -30,63 +30,63 @@ Notes: Since we compile into C++ source, you can include any C or C++ type libra
 
 ###Variables
 ###Declaration
-Usage: I NEED A **type** CALLED **name**
+Usage: I NEED A **type** CALLED **name**  
 Notes: Declares **name** as a variable of type specified by **type**.  
-The **type** can be any type accepted in C++. There is no support for enumerated types yet.
+The **type** can be any type accepted in C++. There is no support for enumerated types yet.  
 ###Assignment
-Usage: **name** SHOULD BE **value**
-Notes: Sets the variable **name** to have a value specified by **value**.
+Usage: **name** SHOULD BE **value**  
+Notes: Sets the variable **name** to have a value specified by **value**.  
 
 ###Operators
 Notes: Same as C/C++ (+, -, /, etc...)
 
 ###Conditionals
-Usage: I THINK **codition**
-Notes: If condition  
+Usage: I THINK **codition**  
+Notes: If condition    
 
-Usage: OR MAYBE **another condition**
-Notes: Need to have an "I THINK" before "OR MAYBE".
+Usage: OR MAYBE **another condition**  
+Notes: Need to have an "I THINK" before "OR MAYBE".  
 
-Usage: I LIED
-Notes: Equivalent of an "else"
+Usage: I LIED  
+Notes: Equivalent of an "else"  
 
-Usage: RIGHT?
-Notes: Required. Ends the if statement.
+Usage: RIGHT?  
+Notes: Required. Ends the if statement.  
 
 ###Loops
-Usage: WATER WATER WATER
-Notes: Starts a loop,
+Usage: WATER WATER WATER  
+Notes: Starts a loop,  
 
-Usage: LOOP LOOP LOOP
-Notes: Ends a loop.
+Usage: LOOP LOOP LOOP  
+Notes: Ends a loop.  
 
-Usage: RUN FROM GEESE
-Notes: Exits from a loop.
+Usage: RUN FROM GEESE  
+Notes: Exits from a loop.  
 
 ###Functions
 ###Declaration
-Usage: **name** FINDS A **type**
-Notes: Start a function called **name** that returns type **type**. No input parameters.
+Usage: **name** FINDS A **type**  
+Notes: Start a function called **name** that returns type **type**. No input parameters.  
 
-Usage: **name** FINDS A **type** FROM A **type** CALLED **name** (AND A **type** CALLED **name** ...)
+Usage: **name** FINDS A **type** FROM A **type** CALLED **name** (AND A **type** CALLED **name** ...)  
 Notes: Start a function called **name** that returns type **type**.  
-For the first set of parameters, use "FROM A ..", and for additional parameters, use "AND A ..".
+For the first set of parameters, use "FROM A ..", and for additional parameters, use "AND A ..".  
 ###End
-Usage: PLEASE WORK
-Notes: Needs to be there to end a function!
+Usage: PLEASE WORK  
+Notes: Needs to be there to end a function!  
 
 ###Returns
-Usage: I CALCULATED **expression**
-Notes: Returns **expression**
+Usage: I CALCULATED **expression**  
+Notes: Returns **expression**  
 
 ###Input
-Usage: ASK ABOUT **name**
-Notes: Gets value from standard input and puts it into **name**.
+Usage: ASK ABOUT **name**  
+Notes: Gets value from standard input and puts it into **name**.  
 
 ###Output
-Usage: SHOW ME **expression**
-Notes: Outputs an expression (string, variable, number, etc).
+Usage: SHOW ME **expression**  
+Notes: Outputs an expression (string, variable, number, etc).  
 
 
 #Authors
-Created by Sameer Chitley, Jami Boy Mohammad and Geoffrey Yu for #SEHackDay 2014.
+Created by Sameer Chitley, Jami Boy Mohammad and Geoffrey Yu for #SEHackDay 2014.  
