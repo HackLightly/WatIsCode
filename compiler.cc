@@ -1,4 +1,4 @@
-#include <iostream> 
+#include <iostream>
 #include <string>
 #include <fstream>
 #include <vector>
@@ -8,12 +8,12 @@ using namespace std;
 
 
 vector<string> splitString (string input) {
-  istringstream iss(input); 
-  vector<string> tokens; 
-  copy(istream_iterator<string>(iss), 
-      istream_iterator<string>(), 
-      back_inserter(tokens)); 
-  return tokens; 
+  istringstream iss(input);
+  vector<string> tokens;
+  copy(istream_iterator<string>(iss),
+      istream_iterator<string>(),
+      back_inserter(tokens));
+  return tokens;
 }
 
 string ummRemover (string line) {
@@ -64,11 +64,22 @@ int main (int argc, char* argv[]) {
         }
         cout << " << std::endl;" << endl;
       }
+      //WHILE
+      else if (tokens.size() == 3 && tokens.at(0) == "WATER" && tokens.at(1) == "WATER" && tokens.at(2) == "WATER") {
+        cout << "while (true) {" << endl;
+      }
+      else if (tokens.size() == 3 && tokens.at(0) == "RUN" && tokens.at(1) == "FROM" && tokens.at(2) == "GEESE") {
+        cout << "break;" << endl;
+      }
+      else if (tokens.size() == 3 && tokens.at(0) == "LOOP" && tokens.at(1) == "LOOP" && tokens.at(2) == "LOOP") {
+        cout << "}" << endl;
+      }
       else {
         throw string(line);
       }
     }
   }
+
   catch (string &msg) {
     cerr << "ERROR: Line number " << lineNum << ": \"" << msg << "\" is unsupported." << endl;
   }
