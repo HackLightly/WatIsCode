@@ -68,9 +68,11 @@ int main (int argc, char* argv[]) {
       else if (tokens.size() == 3 && tokens.at(0) == "WATER" && tokens.at(1) == "WATER" && tokens.at(2) == "WATER") {
         cout << "while (true) {" << endl;
       }
+      //BREAK
       else if (tokens.size() == 3 && tokens.at(0) == "RUN" && tokens.at(1) == "FROM" && tokens.at(2) == "GEESE") {
         cout << "break;" << endl;
       }
+      //END LOOP
       else if (tokens.size() == 3 && tokens.at(0) == "LOOP" && tokens.at(1) == "LOOP" && tokens.at(2) == "LOOP") {
         cout << "}" << endl;
       }
@@ -94,7 +96,7 @@ int main (int argc, char* argv[]) {
       else if (tokens.size() > 1 && tokens.at(0) == "PLEASE" && tokens.at(1) == "WORK") {
         cout << "}" << endl;
       }
-      // IF
+      //IF
       else if (tokens.size() > 2 && tokens.at(0) == "I" && tokens.at(1) == "THINK") {
         cout << "if (";
         for (int i = 2; i < tokens.size(); i++) {
@@ -102,6 +104,7 @@ int main (int argc, char* argv[]) {
         }
         cout << ") {" << endl;
       }
+      //ELSE IF
       else if (tokens.size() > 2 && tokens.at(0) == "OR" && tokens.at(1) == "MAYBE") {
         cout << "} else if (";
         for (int i = 2; i < tokens.size(); i++) {
@@ -109,12 +112,15 @@ int main (int argc, char* argv[]) {
         }
         cout << ") {" << endl;
       }
+      //ELSE
       else if (tokens.size() == 2 && tokens.at(0) == "I" && tokens.at(1) == "LIED") {
         cout << "} else {" << endl;
       }
+      //END IF
       else if (tokens.size() == 1 && tokens.at(0) == "RIGHT?") {
         cout << "}" << endl;
       }
+      //RETURN
       else if (tokens.size() > 2 && tokens.at(0) == "I" && tokens.at(1) == "CALCULATED") {
         cout << "return ";
         for (int i = 2; i < tokens.size(); i++) {
