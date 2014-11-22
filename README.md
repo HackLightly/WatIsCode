@@ -33,6 +33,7 @@ Notes: Since we compile into C++ source, you can include any C or C++ type libra
 Usage: I NEED A **type** CALLED **name**
 Notes: Declares **name** as a variable of type specified by **type**.
 The **type** can be any type accepted in C++. There is no support for enumerated types yet.
+
 ###Assignment
 Usage: **name** SHOULD BE **value**
 Notes: Sets the variable **name** to have a value specified by **value**.
@@ -41,7 +42,7 @@ Notes: Sets the variable **name** to have a value specified by **value**.
 Notes: Same as C/C++ (+, -, /, etc...)
 
 ###Conditionals
-Usage: I THINK **codition**
+Usage: I THINK **condition**
 Notes: If condition
 
 Usage: OR MAYBE **another condition**
