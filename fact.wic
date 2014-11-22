@@ -1,17 +1,23 @@
+UMM this is a recursive program that calculates the factorial of a number.
+
 DO I NEED iostream
 
 fact FINDS A int FROM A int CALLED n
   I THINK n <= 1
     I CALCULATED 1
   I LIED
-    I CALCULATED n * fact(n - 1)
+    I CALCULATED n * fact(n - 1) UMM Whoa, Recursion!
   RIGHT?
 PLEASE WORK
 
+UMM needs a main to work!
 main FINDS A int FROM A int CALLED argc AND A char* CALLED argv[]
   I NEED A int CALLED x
-
+  
+  SHOW ME "What value do you want the factorial of?"
   ASK ABOUT x
+
+  SHOW ME "The factorial is:"
   SHOW ME fact(x)
 
   I CALCULATED 0
