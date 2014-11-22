@@ -72,6 +72,24 @@ int main (int argc, char* argv[]) {
         cout << "break;" << endl;
       }
       else if (tokens.size() == 3 && tokens.at(0) == "LOOP" && tokens.at(1) == "LOOP" && tokens.at(2) == "LOOP") {
+      //FUNCTION (Declaration)
+      else if (tokens.size() > 3 && tokens.at(1) == "FINDS" && tokens.at(2) == "A") {
+        if (tokens.size() > 4 && tokens.at(4) == "FROM" && tokens.at(5) == "A" && tokens.at(7) == "CALLED") {
+          cout << tokens.at(3) << " " << tokens.at(0) << "(";
+          for (int i = 4; i < tokens.size(); i+= 5) {
+            cout << tokens.at(i + 2) << " " << tokens.at(i + 4);
+            if (i + 5 < tokens.size()) {
+              cout << ", ";
+            }
+          }
+          cout << ") {" << endl;
+        }
+        else {
+          cout << tokens.at(3) << " " << tokens.at(0) << "() {" << endl;
+        }
+      }
+      //FUNCTION END
+      else if (tokens.size() > 1 && tokens.at(0) == "PLEASE" && tokens.at(1) == "WORK") {
         cout << "}" << endl;
       }
       else {
