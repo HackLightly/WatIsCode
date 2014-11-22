@@ -74,7 +74,7 @@ int main (int argc, char* argv[]) {
       else if (tokens.size() == 3 && tokens.at(0) == "LOOP" && tokens.at(1) == "LOOP" && tokens.at(2) == "LOOP") {
         cout << "}" << endl;
       }
-      //FUNCTION (Declaration)
+      //FUNCTION DECLARATION
       else if (tokens.size() > 3 && tokens.at(1) == "FINDS" && tokens.at(2) == "A") {
         if (tokens.size() > 4 && tokens.at(4) == "FROM" && tokens.at(5) == "A" && tokens.at(7) == "CALLED") {
           cout << tokens.at(3) << " " << tokens.at(0) << "(";
